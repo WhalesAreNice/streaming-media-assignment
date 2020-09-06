@@ -11,13 +11,19 @@ const onRequest = (request, response) => {
     case '/':
       htmlHandler.getIndex(request, response);
       break;
-    case '/party':
+    case '/client2':
+      htmlHandler.getClient2(request, response);
+      break;
+    case '/client3':
+      htmlHandler.getClient3(request, response);
+      break;
+    case '/party.mp4':
       mediaHandler.getParty(request, response);
       break;
-    case '/bling':
+    case '/bling.mp3':
       mediaHandler.getBling(request, response);
       break;
-    case '/bird':
+    case '/bird.mp4':
       mediaHandler.getBird(request, response);
       break;
     default:
